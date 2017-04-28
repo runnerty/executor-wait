@@ -7,34 +7,13 @@ class waitExecutor extends Execution {
     super(process);
   }
 
-  exec() {
+  exec(params) {
     var _this = this;
+    var seconds = params.seconds || 60;
 
-    return new Promise(function (resolve, reject) {
-      _this.getValues()
-        .then((res) => {
-          var seconds = 60;
-
-          if (res.seconds) {
-            seconds = res.seconds;
-          }
-
-          setTimeout(function () {
-            var endOptions = {
-              end: 'end'
-            };
-            _this.end(endOptions, resolve, reject);
-          }, seconds * 1000 || 0);
-        })
-        .catch((err) => {
-          var endOptions = {
-            end: 'error',
-            messageLog: `Wait Error getValues: ${err}`,
-            execute_err_return: `Wait Error getValues: ${err}`
-          };
-          _this.end(endOptions, resolve, reject);
-        });
-    });
+    setTimeout(function () {
+      _this.end();
+    }, seconds * 1000 || 0);
   }
 }
 
