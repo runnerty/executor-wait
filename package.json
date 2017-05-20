@@ -1,5 +1,5 @@
 {
-  "name": "runnerty-executor-wait",
+  "name": "@runnerty/executor-wait",
   "version": "0.0.1",
   "description": "Runnerty module: wait executor",
   "author": "Coderty",
