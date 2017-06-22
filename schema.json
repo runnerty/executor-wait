@@ -1,22 +1,44 @@
 {
-  "$schema": "http://json-schema.org/draft-04/schema#",
-  "title": "runnerty-executor-wait",
+  "$schema": "http://json-schema.org/draft-06/schema#",
+  "title": "@runnerty-executor-wait",
   "definitions": {
-    "config":
-      { "type": "object",
-        "required": ["id","type"],
-        "properties":{
-          "id": {"type": "string"},
-          "type": {"type": "string", "pattern": "runnerty-executor-wait"},
-          "seconds": {"type": ["string","number"]}
+    "config": {
+      "type": "object",
+      "required": [
+        "id",
+        "type"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "type": {
+          "type": "string",
+          "pattern": "@runnerty-executor-wait"
+        },
+        "seconds": {
+          "type": [
+            "string",
+            "number"
+          ]
+        }
       }
     },
-    "params":
-    { "type": "object",
-      "required": ["id"],
-      "properties":{
-        "id": {"type": "string"},
-        "seconds": {"type": ["string","number"]}
+    "params": {
+      "type": "object",
+      "required": [
+        "id"
+      ],
+      "properties": {
+        "id": {
+          "type": "string"
+        },
+        "seconds": {
+          "type": [
+            "string",
+            "number"
+          ]
+        }
       }
     }
   }
