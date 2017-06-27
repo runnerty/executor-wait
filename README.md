@@ -4,7 +4,7 @@
 ```json
 {
   "id": "wait_default",
-  "type": "@runnerty/executor-wait",
+  "type": "@runnerty-executor-wait",
   "seconds":60
 }
 ```
