@@ -1,13 +1,13 @@
 {
   "name": "@runnerty/executor-wait",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Runnerty module: wait executor",
   "author": "Coderty",
   "license": "MIT",
   "main": "index.js",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Coderty/runnerty-executor-wait.git"
+    "url": "git+https://github.com/runnerty/executor-wait.git"
   },
   "keywords": [
     "runnerty",
@@ -15,9 +15,9 @@
     "wait"
   ],
   "bugs": {
-    "url": "https://github.com/Coderty/runnerty-executor-wait/issues"
+    "url": "https://github.com/runnerty/executor-wait/issues"
   },
-  "homepage": "https://github.com/Coderty/runnerty-executor-wait#readme",
+  "homepage": "https://github.com/runnerty/executor-wait#readme",
   "dependencies": {
   }
 }
