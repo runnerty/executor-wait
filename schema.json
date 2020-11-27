@@ -4,10 +4,7 @@
   "definitions": {
     "config": {
       "type": "object",
-      "required": [
-        "id",
-        "type"
-      ],
+      "required": ["id", "type"],
       "properties": {
         "id": {
           "type": "string"
@@ -16,28 +13,26 @@
           "type": "string",
           "pattern": "@runnerty-executor-wait"
         },
+        "time": {
+          "type": ["string"]
+        },
         "seconds": {
-          "type": [
-            "string",
-            "number"
-          ]
+          "type": ["string", "number"]
         }
       }
     },
     "params": {
       "type": "object",
-      "required": [
-        "id"
-      ],
+      "required": ["id"],
       "properties": {
         "id": {
           "type": "string"
         },
+        "time": {
+          "type": ["string"]
+        },
         "seconds": {
-          "type": [
-            "string",
-            "number"
-          ]
+          "type": ["string", "number"]
         }
       }
     }

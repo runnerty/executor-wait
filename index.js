@@ -1,6 +1,8 @@
-"use strict";
+'use strict';
 
-var Execution = global.ExecutionClass;
+const ms = require('ms');
+
+const Execution = global.ExecutionClass;
 
 class waitExecutor extends Execution {
   constructor(process) {
@@ -8,12 +10,18 @@ class waitExecutor extends Execution {
   }
 
   exec(params) {
-    var _this = this;
-    var seconds = params.seconds || 60;
+    // Backward compatibility with version 1:
+    if (params.seconds && !params.time) {
+      params.time = `${params.seconds}`;
+    }
+    // 60s default value:
+    if (!params.seconds && !params.time) {
+      params.time = `60s`;
+    }
 
-    setTimeout(function () {
-      _this.end();
-    }, seconds * 1000 || 0);
+    setTimeout(() => {
+      this.end();
+    }, ms(params.time) || 0);
   }
 }
 
