@@ -14,7 +14,7 @@
           "pattern": "@runnerty-executor-wait"
         },
         "time": {
-          "type": ["string"]
+          "type": "string"
         },
         "seconds": {
           "type": ["string", "number"]
@@ -29,7 +29,10 @@
           "type": "string"
         },
         "time": {
-          "type": ["string"]
+          "type": "string"
+        },
+        "error": {
+          "type": "string"
         },
         "seconds": {
           "type": ["string", "number"]

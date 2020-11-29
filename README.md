@@ -33,6 +33,14 @@ Add in [plan.json]:
   "time": "30s"
 }
 ```
+#### We can make it end up failing by indicating the error message:
+```json
+{
+  "id": "wait_default",
+  "time": "0s",
+  "error": "Caused error for testing"
+}
+```
 
 [Runnerty]: http://www.runnerty.io
 [downloads-image]: https://img.shields.io/npm/dm/@runnerty/executor-wait.svg
