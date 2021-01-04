@@ -16,6 +16,20 @@ Module for the creation of waiting processes.
 ```bash
 npm i @runnerty/executor-wait
 ```
+
+You can also add modules to your project with [runnerty-cli]
+
+```bash
+npx runnerty-cli add @runnerty/executor-wait
+```
+
+This command installs the module in your project, adds example configuration in your `config.json` and creates an example plan of use.
+
+If you have installed [runnerty-cli] globally you can include the module with this command:
+
+```bash
+rty add @runnerty/executor-wait
+```
 ### Configuration:
 Add in [config.json]:
 ```json
@@ -48,4 +62,5 @@ Add in [plan.json]:
 [npm-image]: https://img.shields.io/npm/v/@runnerty/executor-wait.svg
 [config.json]: http://docs.runnerty.io/config/
 [plan.json]: http://docs.runnerty.io/plan/
+[runnerty-cli]: https://www.npmjs.com/package/runnerty-cli
 
