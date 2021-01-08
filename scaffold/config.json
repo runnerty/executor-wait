@@ -1,0 +1,9 @@
+{
+  "executors": [
+    {
+      "id": "wait_default",
+      "type": "@runnerty-executor-wait",
+      "time": "1 min"
+    }
+  ]
+}

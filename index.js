@@ -2,7 +2,7 @@
 
 const ms = require('ms');
 
-const Executor = global.ExecutionClass;
+const Executor = require('@runnerty/module-core').Executor;
 
 class waitExecutor extends Executor {
   constructor(process) {
