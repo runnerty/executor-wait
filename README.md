@@ -47,6 +47,15 @@ Add in [plan.json]:
   "time": "30s"
 }
 ```
+
+```json
+{
+  "id": "wait_default",
+  "time": "3s",
+  "output": "Hello @GETDATE('YYYY-MM-DD')"
+}
+```
+
 #### We can make it end up failing by indicating the error message:
 ```json
 {

@@ -10,7 +10,7 @@ class waitExecutor extends Executor {
   }
 
   exec(params) {
-    let endOptions = { end: 'end' };
+    const endOptions = { end: 'end' };
     // Backward compatibility with version 1:
     if (params.seconds && !params.time) {
       params.time = params.seconds + 's';
@@ -18,6 +18,12 @@ class waitExecutor extends Executor {
     // 60s default value:
     if (!params.seconds && !params.time) {
       params.time = '60 s';
+    }
+
+    if (params.output && params.output != '') {
+      endOptions.messageLog = params.output;
+      endOptions.data_output = params.output;
+      endOptions.msg_output = params.output;
     }
 
     if (params.error && params.error != '') {
