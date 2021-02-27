@@ -7,12 +7,15 @@
 
 [![NPM version][npm-image]][npm-url] [![Downloads][downloads-image]][npm-url]
 <a href="#badge">
-  <img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg">
+<img alt="code style: prettier" src="https://img.shields.io/badge/code_style-prettier-ff69b4.svg">
 </a>
 
 # Wait executor for [Runnerty]:
+
 Module for the creation of waiting processes.
+
 ### Installation:
+
 ```bash
 npm i @runnerty/executor-wait
 ```
@@ -30,8 +33,11 @@ If you have installed [runnerty-cli] globally you can include the module with th
 ```bash
 rty add @runnerty/executor-wait
 ```
+
 ### Configuration:
+
 Add in [config.json]:
+
 ```json
 {
   "id": "wait_default",
@@ -39,8 +45,11 @@ Add in [config.json]:
   "time": "1 min"
 }
 ```
+
 ### Plan:
+
 Add in [plan.json]:
+
 ```json
 {
   "id": "wait_default",
@@ -57,6 +66,7 @@ Add in [plan.json]:
 ```
 
 #### We can make it end up failing by indicating the error message:
+
 ```json
 {
   "id": "wait_default",
@@ -65,11 +75,10 @@ Add in [plan.json]:
 }
 ```
 
-[Runnerty]: http://www.runnerty.io
+[runnerty]: http://www.runnerty.io
 [downloads-image]: https://img.shields.io/npm/dm/@runnerty/executor-wait.svg
 [npm-url]: https://www.npmjs.com/package/@runnerty/executor-wait
 [npm-image]: https://img.shields.io/npm/v/@runnerty/executor-wait.svg
 [config.json]: http://docs.runnerty.io/config/
 [plan.json]: http://docs.runnerty.io/plan/
 [runnerty-cli]: https://www.npmjs.com/package/runnerty-cli
-
