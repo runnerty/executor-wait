@@ -1,6 +1,6 @@
 {
   "name": "@runnerty/executor-wait",
-  "version": "3.0.5",
+  "version": "3.0.6",
   "description": "Runnerty module: wait executor",
   "author": "Runnerty Tech",
   "license": "MIT",
@@ -23,13 +23,13 @@
   },
   "homepage": "https://github.com/runnerty/executor-wait#readme",
   "dependencies": {
-    "@runnerty/module-core": "~3.0.6",
+    "@runnerty/module-core": "~3.0.7",
     "ms": "~2.1.3"
   },
   "devDependencies": {
-    "eslint": "^7.32.0",
+    "eslint": "^8.5.0",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-prettier": "^4.0.0",
-    "prettier": "^2.4.1"
+    "prettier": "^2.5.1"
   }
 }
