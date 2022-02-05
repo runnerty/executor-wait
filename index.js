@@ -9,7 +9,7 @@ class waitExecutor extends Executor {
     super(process);
   }
 
-  exec(params) {
+  async exec(params) {
     const endOptions = { end: 'end' };
     // Backward compatibility with version 1:
     if (params.seconds && !params.time) {
